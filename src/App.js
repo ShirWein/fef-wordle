@@ -1,7 +1,9 @@
-import './App.css';
+import './index.css';
 import { Welcome } from './pages/Welcome';
 import { Game } from './pages/Game';
 import { useState } from 'react';
+import * as React from 'react';
+
 
 function App() {
 
@@ -9,7 +11,6 @@ function App() {
 
   return (
     <>
-      <h1>Wordle!</h1>
       <Welcome/>
       <Game/>
     </> 
