@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Boardgame() {
+export function Keyboard() {
 
     return (
         <div className="input-grid">
@@ -10,4 +10,3 @@ export function Boardgame() {
         </div>
   );
 };
-
