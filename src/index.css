@@ -5,7 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E0F6EE; 
+  background-color: #E0F6EE
+}
+
+
+html, #root {
+  background-color: #E0F6EE
 }
 
 code {
@@ -19,10 +24,8 @@ code {
   display: grid;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
-  height: 100vh;
-  margin-top: 100px;
   grid-template-columns: repeat(5, 60px);
   grid-template-rows: repeat(6, 60px);
   gap: 2px;
@@ -33,27 +36,32 @@ code {
   width: 60px;
   font-size: 73px;
   text-align: center;
+  transform: rotateX(5deg) rotateY(5deg);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   
 }
 
 /* style the keyboard */
 
 .keyboard {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  margin-top: 511px;
-  gap: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 110%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 640px;
     
 }
 
 .key {
   width: 60px;
   height: 60px;
-  background-color: #ccc;
+  background-color: rgb(231, 206, 206);
   border: none;
   font-size: 22px;
   text-align: center;
   line-height: 50px;
   border-radius: 4px;
+  cursor: pointer;
+  margin: 2px;
 }
