@@ -13,6 +13,8 @@ code {
     monospace;
 }
 
+/* style the board */
+
 .input-grid {
   display: grid;
   position: absolute;
@@ -29,5 +31,29 @@ code {
 .input-field {
   height: 60px;
   width: 60px;
+  font-size: 73px;
+  text-align: center;
   
+}
+
+/* style the keyboard */
+
+.keyboard {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 511px;
+  gap: 4px;
+    
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
 }
