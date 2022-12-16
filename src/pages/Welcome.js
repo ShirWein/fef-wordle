@@ -1,8 +1,12 @@
 export function Welcome () {
+    const text = `Welcome {User} to Wordle game`
     return (
         <>
-            <h1>Welcome User</h1>
-            <a href={'game'} >Start Play</a>
+            <div className="typewriter">
+                <h1>{text}</h1>
+            </div>
+            <br/>
+            <button className="play2"><a className='play' href={'game'} >Start Play</a></button>
        </>
     )
 }   
