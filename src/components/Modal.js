@@ -18,14 +18,23 @@ export default function ModalPop() {
             show={show}
             onHide={handleClose}
             backdrop="static"
-            keyboard={false}
+            keyboard={true}
         >
             <Modal.Header closeButton>
             <Modal.Title>How to play?</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            I will not close if you click outside me. Don't even try to press
-            escape key.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
+            I will not close if you click outside me.
             </Modal.Body>
             <Modal.Footer className='justify-content-center'>
                 <b>©️ Shir Weinbrand | 2022-2023</b>
