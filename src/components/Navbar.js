@@ -1,11 +1,15 @@
 import React from "react";
+import ModalPop from "./Modal";
 
 export function Navbar () {
-    return (
+
+  return (
+
+    <>
 
     <nav className="navbar fixed-top" style={{backgroundColor: '#E0F6EE'}}>
         <div className="container-fluid d-flex justify-content-between">
-          <button className="navbar-toggler" type="button">i</button>
+          <ModalPop/>
           <a className="navbar-brand fs-2" href="#"><strong>W🤓RDLE</strong></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
             <span className="navbar-toggler-icon"></span>
@@ -27,6 +31,7 @@ export function Navbar () {
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
+  </>
   )
 }
