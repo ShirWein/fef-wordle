@@ -39,7 +39,7 @@ export function Boardgame() {
     return (
         <div className="input-grid">
             {Array(30).fill().map((_, i) => (
-                i===0 ? <input type="text" key={i} className="input-field" ref={inputRef} maxLength={1} value={inputValue} onChange={(e) => handleChange(e.target.value)} style={{caretColor: 'transparent'}} /> :
+                i===0 ? <input type="text" key={i} className="input-field" ref={inputRef} maxLength={1} value={inputValue[i]} onChange={(e) => handleChange(e.target.value)} style={{caretColor: 'transparent'}} /> :
                 <input type="text" key={i} className="input-field"  maxLength={1} value={inputValue} onChange={(e) => handleChange(e.target.value)} style={{caretColor: 'transparent'}}/>
             ))}
         </div>
